@@ -35,7 +35,7 @@ function retirtarSaldo() {
   let egreso = Number(prompt('Cuando desea ingresar'));
   let saldo = 10000;
   alert(
-    `su saldo era de ${saldo},se retiro ${ingreso} ahora su saldo es de ${
+    `su saldo era de ${saldo},se retiro ${egreso} ahora su saldo es de ${
       saldo - egreso
     }`
   );

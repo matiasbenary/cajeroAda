@@ -15,7 +15,7 @@ if (usuario == 'admin' && clave == '123456') {
   } else if (opcion == 2) {
     let egreso = Number(prompt('Cuando desea ingresar'));
     alert(
-      `su saldo era de ${saldo},se retiro ${ingreso} ahora su saldo es de ${
+      `su saldo era de ${saldo},se retiro ${egreso} ahora su saldo es de ${
         saldo - egreso
       }`
     );

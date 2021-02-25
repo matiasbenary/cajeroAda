@@ -17,7 +17,7 @@ if (usuario == 'admin' && clave == '123456') {
     let egreso = Number(prompt('Cuando desea ingresar'));
     let saldo = 10000;
     alert(
-      `su saldo era de ${saldo},se retiro ${ingreso} ahora su saldo es de ${
+      `su saldo era de ${saldo},se retiro ${egreso} ahora su saldo es de ${
         saldo - egreso
       }`
     );
@@ -31,26 +31,3 @@ if (usuario == 'admin' && clave == '123456') {
 }
 
 
-
-// Calcula el saldo y lo imprime
-function retirtarSaldo() {
-  
-}
-
-/*
-Cuando se llama el usuario ingresa a una opcion 
-imprime la opcion seleccionada
-ahora cuando se selecciona la opcion 1 se ejecuta la funcion de agregarSaldo
-*/
-function menuCajero() {
-  let opcion = prompt('Seleccione una opcion 1,2,3');
-  if (opcion == 1) {
-    agregarSaldo();
-  } else if (opcion == 2) {
-    retirtarSaldo();
-  } else if (opcion == 3) {
-    alert('Selecciono la opcion de ver estado');
-  } else {
-    alert('Opcion invalido');
-  }
-}
