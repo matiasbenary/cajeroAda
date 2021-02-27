@@ -1,0 +1,17 @@
+### Como puedo escribir js dentro de un html? Y dentro de un archivo?
+
+Dentro de un html puedo escribir js abriendo una etiqueta "script" justo antes de de cerrar la etiqueta del body.
+
+Si quiero trabajar con un archivo agrego a esta etiqueta la propiedad src y lo linkeo como css
+
+Nombre comunes para el archivo js:
+
+* index.js
+* app.js
+* main.js
+
+### Puedo escribir js dentro de la consola del navegador? Y si se puede que sentido tendria?
+
+Si se puede escribir codigo,y te utiliza para hacer pruebas cortas o comprobar algo
+
+
