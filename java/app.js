@@ -21,6 +21,36 @@ console.log(variable);
 
 const fijo = 5;
 
+/*
+Como escribir buenas variables
+descriptivas y cortas
+nombre del usuario:
+bien:
+  name
+  user
+  nombre
+mal:
+ u
+ nombreDelUsuarioQueIngresoDato
+
+Si la variables son booleanas:
+Se escriben como preguntas y como afirmaciones:
+puetaAbierta:
+isOpen
+estaAbierta
+
+tiene chocolata:
+hasChocolate
+tieneChocolate
+if(tieneChocolate)
+
+La constante como constante,no cambian en ninguna parte del codigo se escriben en mayuscula
+ej url de mi api
+const URL_BASE = "www.google.com.ar";
+Impuestos:
+const TAX = 1.2;
+*/
+
 // let y const se usan para definir una variable
 // let me permite cambiar el valor del dato
 // const si cambio el valor me va da error
@@ -87,18 +117,16 @@ console.log(15 == 15, 15 === 15, 15 == '15', 15 === '15');
 // 15 !== '15'=> true
 console.log(15 != 15, 15 !== 15, 15 != '15', 15 !== '15');
 
-
 const n1 = 15;
-const n2 = 16; 
+const n2 = 16;
 const n3 = 17;
 // n1 < n2 => true
 // true < n3 => true
 //if(n1 < n2  < n3)
 
-if(n1 < n2 && n2 < n3){
-  console.log("esta en rango");
+if (n1 < n2 && n2 < n3) {
+  console.log('esta en rango');
 }
-
 
 // Operaciones logicas => operaciones entre booleanos
 
@@ -155,22 +183,22 @@ if(condicional){
   incorrecto
 }
 */
-const user = "admin";
+const user = 'admin';
 const pass = 1234569;
-if(user == "admin" && pass == 123456){
-  console.log("bienvenido");
-}else{
-  console.log("datos incorrectos");
+if (user == 'admin' && pass == 123456) {
+  console.log('bienvenido');
+} else {
+  console.log('datos incorrectos');
 }
 
-if(user == "admin"){
-  if(pass == 123456){
-    console.log("bienvenido");
-  }else{
-    console.log("pass incorrecto");
+if (user == 'admin') {
+  if (pass == 123456) {
+    console.log('bienvenido');
+  } else {
+    console.log('pass incorrecto');
   }
-}else{
-  console.log("usario incorrecto");
+} else {
+  console.log('usario incorrecto');
 }
 
 /*
@@ -183,4 +211,110 @@ if(condicon){
 }
 */
 
+// Funciones => Una función es un fracmento de codigo que me permite reutilizar mi codigo
 
+/*
+function nombreFuncion(parametros){
+  micodigo
+  return(para devolver un valor)
+}
+
+const nombreFuncion = (parametros) => {
+  micodigo
+  return
+}
+
+Que es un parametro?Que hace? Y Cuantos puedo colocar?Tiene un orden?
+Es una variable que voy a usar en mi funcion. Y el parametro se envia cuando se invocar la funcion.
+No tengo limites,pero si importa el orden
+
+Que es el return?Para que se usa?Cuantos puedo colocar?
+Es lo que devuelve la funcion.Se lo usa para seguir trabajando
+Se pueden colocar varios return
+
+sin return o si no me interesa lo retorna:
+nombreFuncion(parametros);
+
+si tiene return y necesito seguir trabajando,lo almaceno en una variable:
+const resultado = nombreFuncion(parametros);
+*/
+// tengo un login de user,pass y este se usa en dos ocaciones,
+// para poder ver imagenes
+// para descargar archico
+
+/* version 1
+// function login(user, pass){
+const login = (user, pass) => {
+  console.log({ user, pass });
+  if (user == 'admin' && pass == 123456) {
+    console.log('bienvenido');
+  } else {
+    console.log('datos incorrectos');
+  }
+};
+
+const usuario = prompt('ingresar user'); //"admin"
+const clave = Number(prompt('ingresar clave'));
+login(usuario, clave);
+login(clave, usuario);
+
+*/
+
+/* version 2 */
+const login = (user, pass) => {
+  if (user == 'admin' && pass == 123456) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const calcularAreaCasaRectangular = (ancho, largo) => {
+  return ancho * largo;
+};
+// ancho 10 ,largo 20
+const calcularImpuestoCasaRectangular = (ancho, largo) => {
+  const IMPUESTOS = 1.2;
+  //IMPUESTOS * ancho 1.2 * 10 => 12
+  //12 * largo => 12 * 20 => 240
+  // retorna 240
+  // 1.2 * 200 =>240
+  return IMPUESTOS * calcularAreaCasaRectangular(ancho, largo);
+};
+
+const usuario = prompt('ingresar user'); //"admin"
+const clave = Number(prompt('ingresar clave'));
+const esLogeado = login(usuario, clave);
+
+if (esLogeado) {
+  console.log('bienvenido');
+  //  const impuestoApagar = calcularImpuestoCasaRectangular(10, 20);
+  //  console.log(`El resultado de tu casa es : ${impuestoApagar}`);
+  console.log(
+    `El resultado de tu casa es : ${calcularImpuestoCasaRectangular(10, 20)}`
+  );
+} else {
+  console.log('rechazado');
+  console.log(calcularAreaCasaRectangular(10, 20));
+}
+
+//Alcance de variables - scope
+// let const toda variable declarada dentro de llaves se pueden llamar
+// Sin llaves es global
+// Es local y se puede usar dentro de llaves que lo contiene,si hay otra llaves dentro se puede usar
+
+let esTarde = true;
+let plataEstacionamiento = 0;
+if (esTarde) {
+  plataEstacionamiento = 200;
+  const test = 15;
+  if (test && esTarde) {
+    esTarde = false;
+    const alfa = 34;
+    console.log(test, esTarde, alfa);
+  }
+  //console.log(alfa);
+} else {
+  plataEstacionamiento = 100;
+}
+console.log(plataEstacionamiento);

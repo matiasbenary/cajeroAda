@@ -1,10 +1,9 @@
-
 //Flujo de mi programa
 const usuario = prompt('Ingrese su usuario');
 const clave = prompt('Ingrese su contraseña');
 
 let estaLogeado = login(usuario, clave);
-if (estaLogeado == true) {
+if (estaLogeado) {
   alert('Esta bienvenido');
   menuCajero();
 } else {
@@ -64,4 +63,3 @@ function menuCajero() {
     alert('Opcion invalido');
   }
 }
-
