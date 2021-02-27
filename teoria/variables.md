@@ -71,3 +71,24 @@ let estaLogeado = !true; //es igual que false;
 let tieneLibros = !true; //es igual que false;
 let puedeVolar = !false; //es igual que false;
 ```
+
+Tenemos el And que se lee en castellano como y. Toma el valor de verdadero cuando todas las afimaciones son verdaderas:
+ej: el usuario Y la clave tiene que ser correctas:
+
+```javascript
+let usuario = 'admin';
+let clave = '123456';
+// en este caso es usuario == 'admin' es true
+// en este caso es clave == '123456' es true
+// entonces js va a leer lo siguiente true && true => como respuesta => true
+//toda la sentencia  es  correcta  por eso  devuele true
+if (usuario == 'admin' && clave == '123456') {
+  alert('logeado');
+}
+```
+
+posibles valores:
+true && true => true
+true && false => false
+false && true => false
+false && false => false
