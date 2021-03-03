@@ -10,10 +10,44 @@
     <script>
       /*
       puedeVerPelicula(edad, tieneAutorizacion)
-      Crear una función puedeVerPelicula que tome como argumentos un número edad y un booleano tieneAutorizacion, y devuelva true si la persona está habilitada para ver la película o false si no. Sólo puede ver la película si: tiene 15 años o más, o tiene autorización de sus padres.
+      Crear una función puedeVerPelicula que tome como argumentos un número edad y un booleano tieneAutorizacion, y devuelva true si la persona está habilitada para ver la película o false si no. Sólo puede ver la película si: tiene 15 años o más, O tiene autorización de sus padres.
       */
+      /*
+      const puedeVerPelicula = (edad, tieneAutorizacion) => {
+        //edad 12
+        //tieneAutorizacion false
+        // 1. edad >= 15
+        // 2. 12 >= 15 -> false
+        // 3. false || false -> false
 
-      const puedeVerPelicula = (edad, tieneAutorizacion) => {};
+        //edad 16
+        //tieneAutorizacion false
+        // 1. edad >= 15
+        // 2. 16 >= 15 -> true
+        // 3. true
+        if (edad >= 15 || tieneAutorizacion) {
+          return true;
+        } 
+          
+        return false;
+       
+      };
+*/
+      const puedeVerPelicula = (edad, tieneAutorizacion) =>
+        edad >= 15 || tieneAutorizacion;
+
+      const edad = Number(prompt('ingrese la edad'));
+      //   let autorizacion = confirm('tiene autorizacion?');
+      let autorizacion = prompt('tiene autorizacion?');
+
+      if (autorizacion == 'si') {
+        autorizacion = true;
+      } else {
+        autorizacion = false;
+      }
+
+      alert(puedeVerPelicula(edad, autorizacion));
+
       console.log(puedeVerPelicula(12, false)); // false
       console.log(puedeVerPelicula(12, true)); // true
       console.log(puedeVerPelicula(16, false)); // true
