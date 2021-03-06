@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      avanzarSemaforo(colorActual)
+      Crear una función avanzarSemaforo que acepte como argumento un string colorActual y devuelva un string con el siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde
+      */
+
+      const avanzarSemaforo = (colorActual) => {
+        if (colorActual == 'verde') {
+          return 'amarillo';
+        } else if (colorActual == 'amarillo') {
+          return 'rojo';
+        } else {
+          return 'verde';
+        }
+      };
+      console.log(avanzarSemaforo('verde')); // 'amarillo'
+      console.log(avanzarSemaforo('amarillo')); // 'rojo'
+      console.log(avanzarSemaforo('rojo')); // 'verde'
+    </script>
+  </body>
+</html>

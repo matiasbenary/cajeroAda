@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+Crear una función `sumar` que tome como argumentos dos números y devuelva la suma de ellos
+*/
+      const sumar = (numeroA, numeroB) => numeroA + numeroB;
+
+      console.log(sumar(2, 3)); // 5
+      console.log(sumar(1.2, 3.4)); // 4.6
+      console.log(sumar(3, -5)); // -2
+
+      /*
+Crear una función `restar` que tome como argumentos dos números y devuelva la resta de ellos
+*/
+      const restar = (numeroA, numeroB) => numeroA - numeroB;
+      console.log(restar(3, 2)); // 1
+      console.log(restar(10, 5.5)); // 4.5
+      console.log(restar(3, 5)); // -2
+
+      /*
+Crear una función `multiplicar` que tome como argumentos dos números y devuelva la multiplicación de ellos
+*/
+      // multiplicar(2, 3) // 6
+      // multiplicar(4, 0.5) // 2
+
+      /*
+Crear una función `dividir` que tome como argumentos dos números y devuelva la suma de ellos
+*/
+
+      // dividir(12, 3) // 4
+      // dividir(8, 4) // 2
+      // dividir(30, 6) // 5
+
+      /*
+Crear una función `esPar` que tome como argumento un número y devuelva `true` si dicho números es par o `false` si no lo es
+
+**TIP**: un número es par si divido por 2 el resto (o módulo) de esa operación es 0
+*/
+      // 1/2 => 1
+      // 2/2 => 0
+      // 3/2 => 1
+      // 11/2 => 1
+      // 20/2 => 0
+      const esPar = (numero) => numero % 2 == 0;
+
+      console.log(esPar(2)); // true
+      console.log(esPar(3)); // false
+
+      // const numeroPruebaPar = Number(prompt('ingrese Numero'));
+      // console.log('pruebaPrompt', esPar(numeroPruebaPar));
+
+      /*
+Crear una función `esImpar` que tome como argumento un número y devuelva `true` si dicho números es impar o `false` si no lo es
+
+**TIP**: un número es impar si divido por 2 el resto (o módulo) de esa operación no es 0
+*/
+      const esImpar = (numero) => !esPar(numero);
+
+      console.log(esImpar(2)); // false
+      console.log(esImpar(3)); // true
+
+      /*
+Crear una función `calcularAreaTriangulo` que tome como argumentos la base y la altura de un triángulo y devuelva el área del mismo
+*/
+
+      const calcularAreaTriangulo = (base, altura) => (base * altura) / 2;
+
+      let area = calcularAreaTriangulo(3, 4);
+      let area2 = calcularAreaTriangulo(5, 6);
+      const base = Number(prompt('ingrese la base'));
+      const altura = Number(prompt('ingrese la altura'));
+      let area3 = calcularAreaTriangulo(base, altura);
+      alert(`El resultado del área es de ${area}, ${area2},${area3}`);
+      // calcularAreaTriangulo(3, 4) // 6
+      // calcularAreaTriangulo(5, 6) // 40
+    </script>
+  </body>
+</html>
