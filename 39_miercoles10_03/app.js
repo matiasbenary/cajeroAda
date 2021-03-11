@@ -3,6 +3,7 @@ const inputText = document.getElementById('inputText');
 const checkbox = document.getElementById('checkbox');
 const title = document.getElementById('title');
 const form = document.getElementById('form');
+const options = document.getElementById('options');
 //inputText.value -> lo utilizo para obetener el texto,es un string
 //checkbox.checked -> lo utilizo para obetener el estado,es un boolean
 // event -> me da informacion del evento,ademas tiene su propias funciones como preventDefault
@@ -10,7 +11,8 @@ const form = document.getElementById('form');
 button.addEventListener('click', (event) => {
   event.preventDefault();
   console.log(event);
-  console.log(inputText.value, checkbox.checked);
+  // para ver los valores de ingreso de datos son:
+  console.log(inputText.value, checkbox.checked, options.value);
   if (checkbox.checked) {
     alert('hola como estas');
   }
