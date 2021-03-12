@@ -1,0 +1,38 @@
+/* ----------------------------- Collapse ----------------------------- */
+
+.acordeon-boton {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.acordeon-boton::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.acordeon-boton--active {
+  background-color: #555;
+}
+
+.acordeon-boton--active::after {
+  content: '\25b4';
+  transform: scale(2);
+}
+
+.acordeon-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+  padding: 0 15px;
+  font-family: sans-serif;
+  background-color: #eee;
+}
