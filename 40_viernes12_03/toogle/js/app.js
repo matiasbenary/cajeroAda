@@ -1,7 +1,8 @@
 /* ----------------------------- Toggle ----------------------------- */
 
 const checkbox = document.getElementById('checkbox');
+const body = document.getElementById('body');
 
 checkbox.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
+  body.classList.toggle('dark');
 });

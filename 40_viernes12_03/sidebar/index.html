@@ -45,9 +45,11 @@
         </li>
       </ul>
     </div>
-
-    <section></section>
-
-    <script src="./js/app.js"></script>
+    <script type="text/javascript">
+      const check = document.getElementById('check');
+      check.addEventListener('input', () => {
+        console.log(check.checked);
+      });
+    </script>
   </body>
 </html>

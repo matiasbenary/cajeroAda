@@ -48,7 +48,10 @@ body {
   color: #f39c12;
   margin: 2px;
 }
-
+/*
+label - relative
+ball - absolute
+*/
 .ball {
   height: 22px;
   width: 22px;

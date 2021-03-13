@@ -14,4 +14,6 @@ abrir.addEventListener('click', (e) => {
 
 cerrar.addEventListener('click', () => {
   modal.classList.toggle('modal-close');
+  modalContainer.style.opacity = '0';
+  modalContainer.style.visibility = 'hidden';
 });
