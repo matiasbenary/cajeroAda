@@ -169,35 +169,3 @@ console.log(
   "obtenerSubreddit('https://www.reddit.com/r/aww/')",
   obtenerSubreddit('https://www.reddit.com/r/aww/')
 );
-
-// Crear una función `convertirEnAcronimo` que tome como argumento un string `str` y un string con todos los caracteres en mayúscula y separados por un punto
-const convertirEnAcronimo = (str) => str.toUpperCase().split('').join('.');
-
-console.log("convertirEnAcronimo('afip')", convertirEnAcronimo('afip'));
-console.log("convertirEnAcronimo('nasa')", convertirEnAcronimo('nasa'));
-
-// Crear una función `esAnioNuevo` que tome como argumento un string `fecha` con el formato `DD:MM:YYYY` un `argumento` y devuelva `true` si la fecha es año nuevo o `false` si no lo es
-
-const esAnioNuevo = (fecha) =>
-  fecha.slice(0, 2) === '01' && fecha.slice(3, 5) === '01';
-
-console.log("esAnioNuevo('03/05/2015')", esAnioNuevo('03/05/2015'));
-console.log("esAnioNuevo('22/01/1987')", esAnioNuevo('22/01/1987'));
-console.log("esAnioNuevo('01/01/2020')", esAnioNuevo('01/01/2020'));
-
-// Crear una función `aprueba` que tome como argumento un número `nota` y devuelva `true` si aprueba el examente (6 o más) o `false` si no. El número tiene que redondearse primero antes de evaluarlo
-const aprueba = (nota) => Math.round(nota) > 5;
-
-console.log('aprueba(1)', aprueba(1));
-console.log('aprueba(5.4)', aprueba(5.4));
-console.log('aprueba(5.5)', aprueba(5.5));
-console.log('aprueba(5.6)', aprueba(5.6));
-console.log('aprueba(8)', aprueba(8));
-
-// Crear una función `obtenerDuracionEnSegundos` que tome como argumento un string `duracion` con el formato (`mm:ss`) y la cantidad de segundos totales de la duración
-const obtenerDuracionEnSegundos = (duracion) =>
-  parseInt(duracion.slice(0, 2)) * 60 + parseInt(duracion.slice(3, 5));
-
-console.log('obtenerDuracionEnSegundos', obtenerDuracionEnSegundos('00:33'));
-console.log('obtenerDuracionEnSegundos', obtenerDuracionEnSegundos('01:05'));
-console.log('obtenerDuracionEnSegundos', obtenerDuracionEnSegundos('10:42'));

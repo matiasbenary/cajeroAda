@@ -199,3 +199,76 @@ obtenerDuracionEnSegundos('00:33') // 33
 obtenerDuracionEnSegundos('01:05') // 65
 obtenerDuracionEnSegundos('10:42') // 642
 ```
+
+### `limiteSuperior(limite)`
+
+Crear una función `limiteSuperior` que tome como argumento un number `limite` y si este supera a 30 retorne 30
+
+```javascript
+limiteSuperior(33) // 30
+limiteSuperior(29) // 29
+limiteSuperior(-100) // -100
+```
+
+### `limiteInferior(limite)`
+
+Crear una función `limiteInferior` que tome como argumento un number `limite` y si es inferior a 1 retorne 1
+
+```javascript
+limiteSuperior(33) // 33
+limiteSuperior(29) // 29
+limiteSuperior(-100) // 1
+```
+
+### `entreRango(limite)`
+
+Crear una función `entreRango` que tome como argumento un number `limite` y si es mayor 30 retorne a 30 pero si es menor a 1 retorne 1.
+
+```javascript
+limiteSuperior(33) // 30
+limiteSuperior(29) // 29
+limiteSuperior(-100) // 1
+```
+
+### `calcularPersona(espacio)`
+
+Crear una función `calcularPersona` que tome como argumento un number `espacio` y lo divida por 1.5 y que retorne el numero de personas que entran
+
+```javascript
+calcularPersona(15) // 10
+calcularPersona(10) // 6
+calcularPersona(5) // 3
+calcularPersona(4) // 2
+```
+
+### `calcularVuelto(dinero)`
+
+Crear una función `calcularVuelto` que tome como argumento un number `dinero` y retorne el numero redondeado para arriba
+
+```javascript
+calcularVuelto(15) // 10
+calcularVuelto(10) // 6
+calcularVuelto(5) // 3
+calcularVuelto(4) // 2
+```
+
+### `mesajeAlAzar()`
+
+Crear una función `mesajeAlAzar` que retorne dos mensaje.Estos tiene que ser aleatorios,es decir que si ejecuta una vez da uno y si se ejecuta de vuelta puede tocar el mismo o uno diferente.
+
+```javascript
+mesajeAlAzar() //Soy un mensaje aleatorio
+mesajeAlAzar() //Soy otro mensaje aleatorio
+```
+En la prueba puede variar el resultado
+
+### `numeroAleatorio()`
+
+Crear una función `numeroAleatorio` que retorne un numero que este entre 0 y 255.
+
+```javascript
+numeroAleatorio() //15
+numeroAleatorio() //38
+```
+En la prueba puede variar el resultado
+
