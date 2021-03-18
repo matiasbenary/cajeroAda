@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //**Perímetro de un rectángulo**
+//- Crear un programa que pida al usuario ingresar el valor de la altura y el valor del ancho de un rectángulo, calcular su perímetro y mostrarlo en un mensaje.
+      
+      //base +base +altura + altura
+      // 15 + 15 +20 +20 
+      // 70
+      // 2 base +2 altura
+      // 2 (base+altura)
+      //  15 20
+      const base = Number(prompt("ingrese la base"));
+      const altura = Number(prompt("ingrese la altura"));
+      // 2*(15 + 20) => 2* 35 => 70
+      // 2*15 + 20 => 30 +20 => 50
+      const resultado = 2 * (base + altura);
+
+      alert(`el perímetro de su rectángulo es: ${resultado}`);
+
+    </script>
+  </body>
+</html>

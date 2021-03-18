@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //**Porcentaje**
+// Crear un programa que pida al usuario ingresar un número, y luego el porcentaje que se desea obtener del mismo. Devolver un mensaje muestre el porcentaje de dicho número.
+
+      // 200 10
+      // 20
+      // 100 -> 200
+      // 10
+      // (10*200)/100
+      const numero = Number(prompt("Ingrese un numero"));
+      const porcentaje = Number(prompt("Ingrese un porcentaje"));
+      const resultado = (numero * porcentaje) / 100; 
+
+      alert(`El porcentaje es: ${resultado}`);
+
+      alert(`El porcentaje es: ${(numero * porcentaje) / 100}`);
+
+      let mensaje = `su porcentaje es: ${resultado}`; 
+      alert(mensaje); 
+      console.log(mensaje);
+
+
+    </script>
+  </body>
+</html>

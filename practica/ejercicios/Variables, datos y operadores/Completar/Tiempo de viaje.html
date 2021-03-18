@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+//**Tiempo de viaje**
+//- Crear un programa que pida al usuario la distancia de su recorrido y mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en distintos medios de transporte, definiendo de antemano distintas velocidades para distintos medios de transporte (p. ej.: a pie: 5 km/hora, bici 10km/hora,auto 60km/hora etc.).
+    // 5km 
+    // 1 
+    // 1/2  
+    // 0.08hora
+    // 
+    const distancia = Number(prompt("Ingrese los km que quiere recorrer"));
+    const pieResultado = distancia / 5;
+    const biciResultado = distancia / 10;
+    const autoResultado = distancia / 60;
+
+    alert(`el tiempo para terminar tu recorrido es: 
+     a pie: ${pieResultado} hs 
+     en bici: ${biciResultado} hs
+     en auto: ${autoResultado} hs`);
+    </script>
+  </body>
+</html>

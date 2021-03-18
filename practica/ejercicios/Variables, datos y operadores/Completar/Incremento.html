@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+  //**Incremento**
+//- Crear un programa que pida ingresar una número de partida y una cantidad a ir incrementando y mostrar cinco mensajes seguidos que muestren el número del mensaje y el total incrementado hasta el momento (p. ej.: empezando con 5 e incrementando 5, "Incremento 1) Total: 10", "Incremento 2) Total: 15", "Incremento 3) Total: 20", etc.).
+
+// 100 2
+// 102
+// 104
+// 106
+// 108
+// 110
+// 50 50
+// 100
+// 150
+// 200
+// 250
+// 300
+// numero = 50
+// incremento = 50
+let numero = Number(prompt("Ingrese el numero"));
+const incremento = Number(prompt("Ingrese la cantidad que quiere incrementar"));
+
+// 50 + 50 = 100
+// numero = numero + incremento;
+numero += incremento;
+alert(`Incremento 1) Total: ${numero}`);
+// 100 + 50 = 150
+numero = numero + incremento;
+alert(`Incremento 2) Total: ${numero}`);
+numero = numero + incremento;
+alert(`Incremento 3) Total: ${numero}`);
+numero = numero + incremento;
+alert(`Incremento 4) Total: ${numero}`);
+numero = numero + incremento;
+alert(`Incremento 5) Total: ${numero}`);
+
+    </script>
+  </body>
+</html>
