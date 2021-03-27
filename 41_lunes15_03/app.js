@@ -45,3 +45,7 @@ const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was 
 // replace recibe dos parametros el primero un string o regex(exprecion regular), y el segundo el texto por el cual quiero cambiar
 console.log(p.replace("dog", 'fox'));
 console.log(p.replace(/[ou]/gi, 'i'));
+
+const tigres= "tres tristes tigre comen trigo en un trigal.Y el tigre comio trigo";
+console.log(tigres.replace("tigre","perro"));
+console.log(tigres.replaceAll("tigre","perro"));
