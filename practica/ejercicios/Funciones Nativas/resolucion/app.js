@@ -47,8 +47,6 @@ console.log(
   sonIguales('NO ESTOY GRITANDO', 'ESTOY GRITANDO')
 );
 
-//Crear una función `contarPalabras` que tome como argumento un string `str` y devuelva la cantidad de palabras que posee
-
 const burlarse = (str) =>
   str
     .replaceAll('a', 'i')

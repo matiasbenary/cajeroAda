@@ -46,17 +46,6 @@ Crear un documento `html` con un título, un párrafo y un bótón con un ícono
 - **modo oscuro**: body con color de fondo negro, texto e ícono con color blanco, ícono de sol
 - **modo claro**: body con color de fondo blanco, texto e ícono con color negro, ícono de luna
 
-### scroll
-
-Crear un documento `html` con un `body` de 2000px de alto. Cuando se scrollea el `body`, cambiar el color de fondo cada 500px, por ejemplo:
-
-| Scroll          | Color de fondo |
-| --------------- | -------------- |
-| 0px - 500px     | red            |
-| 501px - 1000px  | green          |
-| 1001px - 1500px | blue           |
-| 1501px - 2000px | orange         |
-
 ### imagenes
 
 Crear un documento `html` con al menos 4 imágenes chicas (100px de alto) y una imagen grande (500px de alto). Cuando se clickean las imágenes chicas, la imagen grande se tiene que actualizar con la misma que la imagen chica clickeada.

@@ -39,16 +39,6 @@ sonIguales('AdA LoVeLaCe', 'Ada Lovelace') // true
 sonIguales('NO ESTOY GRITANDO', 'ESTOY GRITANDO') // false
 ```
 
-### `contarPalabras(str)`
-
-Crear una función `contarPalabras` que tome como argumento un string `str` y devuelva la cantidad de palabras que posee
-
-```javascript
-contarPalabras('javascript') // 1
-contarPalabras('ada lovelace') // 2
-contarPalabras('si debuggear es el proceso de remover bugs, programar es el proceso de agregarlos') // 14
-```
-
 ### `burlarse(str)`
 
 Crear una función `burlarse` que tome como argumento un string `str` y devuelva el mismo string con todas las vocales reemplazadas por la letra i
@@ -112,15 +102,6 @@ ocultarContrasenia(123456) // '******'
 ocultarContrasenia(111222333) // '*********'
 ```
 
-### `espaciarCaracteres(str)`
-
-Crear una función `espaciarCaracteres` que tome como argumento un string `str` y devuelva un string con todos sus caracteres separados por un espacio
-
-```javascript
-espaciarCaracteres('javascript') // 'j a v a s c r i p t'
-espaciarCaracteres('ada lovelace') // 'a d a l o v e l a c e'
-```
-
 ### `removerVocales(str)`
 
 Crear una función `espaciarCaracteres` que tome como argumento un string `str` y devuelva un string con todas sus vocales removidas
@@ -157,15 +138,6 @@ esPuenteSeguro('########') // true
 ```javascript
 obtenerSubreddit('https://www.reddit.com/r/javascript/') // 'javascript' 
 obtenerSubreddit('https://www.reddit.com/r/aww/') // 'aww' 
-```
-
-### `convertirEnAcronimo(str)`
-
-Crear una función `convertirEnAcronimo` que tome como argumento un string `str` y un string con todos los caracteres en mayúscula y separados por un punto
-
-```javascript
-convertirEnAcronimo('afip') // 'A.F.I.P.'
-convertirEnAcronimo('nasa') // 'N.A.S.A.'
 ```
 
 ### `esAnioNuevo(fecha)`
