@@ -111,19 +111,6 @@ Crear una página que:
 
 ---
 
-### Selector de imágenes
-
-Crear una página que:
-
-- Tenga un `select` con categorías de imágenes (por ejemplo, animales, comida, paisajes, etc) y un contenedor con al menos 9 imágenes correspondientes a las distintas categorías, mostradas como grilla.
-- El `select` tenga la opción `Todas` y comience con dicha opción seleccionada.
-- Al seleccionar una nueva opción en el `select` se oculten aquellas imágenes que no pertecen a la categoría seleccionada y se muestren las que sí.
-- Al seleccionar `Todas` se muestren todas las imágenes.
-
-**TIP:** Agregar a cada imagen un atributo `data-categoria` cuyo valor se corresponda con el atributo `value` del `option` de la categoría correspondiente.
-
----
-
 ### Buscador
 
 Crear una página que:
@@ -137,18 +124,6 @@ Crear una página que:
 <br>
 
 Por ejemplo, si una imagen tiene un `alt` que dice `Oso koala comiendo eucaliptus` y se busca `ko` dicha imagen debe mostrarse.
-
----
-
-### Filtro de imágenes
-
-Crear una página que:
-
-- Tenga una grilla de imágenes y al menos 4 `checkbox` con categorías (por ejemplo, animales, comida, paisajes, etc).
-- Al seleccionar un `checkbox` se actualice la grilla, mostrando aquellas imágenes que pertenezcan a las categorías seleecionadas.
-- Al deseleccionar todos los checkbox se muestren todas las imágenes
-
-**TIP:** Agregar a cada imagen un atributo `data-categoria` cuyo valor se corresponda con el atributo `value` del `checkbox` de la categoría correspondiente.
 
 ---
 
@@ -193,61 +168,3 @@ Por lo que el resultado deberá corresponder al siguiente para el puntaje total:
 - **6-8:** Conforme
 - **8-10:** Satisfecho
 - **11-12:** Muy satisfecho
-
----
-
-### Tarjeta de crédito (Validación)
-
-Realizaremos una validación sobre el formulario del ejercicio [Pago](https://github.com/Ada-IT/ejercicios-frontend/blob/master/modulo-2/ejercicios/21-formularios.md).
-
-Aplicaremos las siguientes validaciones:
-
-**Paso 1: Campo del número de la tarjeta de crédito.**
-
-- El campo debe tener 16 caracteres. Al salirse del foco de este input, y en el caso de no cumplir con este requerimiento, el input debe colorearse de rojo, le mostraremos un mensaje de error que la tarjeta debe contener 16 caracteres y borraremos el contenido el input.
-- Adicionaremos un input de tipo selector con 2 opciones. Visa y Mastercard. Esto no debe estar disponible para la edición del usuario, pero aplicaremos un cambio dada la siguiente condición: Si el número ingresado por el usuario inicia con 5. Será Mastercard, si comienza con 3 o 4 será visa. Y si inicia con otro valor mostraremos un mensaje de error indicando el número ingresado es erróneo.
-
-**Paso 2: Campo nombre.**
-
-- Validar que el campo de nombre posea solo texto. Lo validaremos con una regex.
-
-**Paso 3: CCV.**
-
-- Validar que solo posea solo números
-- Que su contenido sea 3 caracteres en el caso de visa y 4 en el caso de mastercard. Por lo que habilitaremos esta opción una vez haya completado correctamente el campo numérico.
-  <br>
-
-En el Paso 1: Usaremos `blur` y `change`
-
-Mientras que las validaciones del Paso 2 y Paso 3 las haremos antes de intentar enviar el formulario.
-
----
-
-### Registro (Validación)
-
-Antes de enviar el [formulario de registro de cliente](https://github.com/Ada-IT/ejercicios-frontend/blob/master/modulo-2/ejercicios/21-formularios.md) creado con anterioridad, realizaremos algunas validaciones sobre este. Pero primero, agregaremos una etiqueta small debajo de cada input con un color rojo y de inicio no va a visualizarse.
-
-Los errores y las validaciones a mostrar deben ser las siguientes:
-
-- **Nombre:** "El campo nombre solo puede contener texto"
-- **Apellido:** "El campo apellido solo puede contener texto"
-- **DNI:** "El DNI no puede ser mayor a 8 caracteres"
-- **Email:** "El formato del email no es válido"
-- **Contraseña:** En este caso utilizaremos 2. "La contraseña debe tener al menos 8, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter especial" y "Las contraseñas no coinciden"
-- **Términos y condiciones de uso:** "Debe aceptar los términos y condiciones"
-
-En el caso de que alguno de los inputs no cumpla con las características solicitadas, debemos visualizar el error correspondiente a ese input.
-
-Usar las siguientes funciones para validar los datos con expresiones regulares:
-
-```javascript
-const esEmailValido = (email) => {
-  const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regex.test(email.toLowerCase());
-};
-
-const esPasswordValida = (password) => {
-  const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
-  return regex.test(password);
-};
-```

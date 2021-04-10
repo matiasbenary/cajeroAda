@@ -86,6 +86,6 @@ En un documento `html` crear una lista desordenada con distintos paises de cada 
 
 En un documento `html` agregar imágenes de comidas, postres y bebidas (3 o 4 de cada uno). Dar estilos para que se muestren una al lado de la otra, que tengan algo de espacio con margenes y que tengan el mismo tamaño. Hacer un programa que al iniciarse pregunte mediante un `prompt` qué se desea ver (comidas, postres o bebidas) y mostrar sólo las imágenes de la categoría correspondiente.
 
-### busqueda
+### busqueda - con funciones nativas
 
 En un documento `html` crear una lista desordenada con al menos 10 items que consistan en oraciones, frases o citas. Hacer un programa que al iniciarse pregunte mediante un `prompt` por una palabra y destaque en rojo y en negrita aquellos items de la lista cuyo texto contenga dicha palabra.

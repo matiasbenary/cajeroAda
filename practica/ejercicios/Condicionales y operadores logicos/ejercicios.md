@@ -25,17 +25,6 @@ estaEnRango(12, 1, 10); // false
 estaEnRango(-3, 1, 10); // false
 ```
 
-### `puedeAvanzar(colorSemaforo)`
-
-Crear una función `puedeAvanzar` que tome como argumento un string con el color del semáforo y devuelva `true` si puede avanzar o `false` si no. Si no se ingresa un color válido, debe devolver un string que diga: `Error: color de semáforo inválido`
-
-```javascript
-puedeAvanzar('verde'); // true
-puedeAvanzar('amarillo'); // false
-puedeAvanzar('rojo'); // false
-puedeAvanzar('lila'); // 'Error: color de semáforo inválido'
-```
-
 ### `esVocal(letra)`
 
 Crear una función `esVocal` que tome como argumento un string `letra` y devuelva `true` si `letra` es una vocal o `false` si no lo es.
@@ -52,19 +41,6 @@ Crear una función `esConsonante` que tome como argumento un string `letra` y de
 ```javascript
 esConsonante('a'); // false
 esConsonante('n'); // true
-```
-
-### `esHoraValida(hora)`
-
-Crear una función `esHoraValida` que tome como argumento un string `hora` con el formato `HH:mm` y determine si es una hora válida del día o no
-
-Ojo investigar split de string
-
-```javascript
-esHoraValida('12:23'); // true
-esHoraValida('12:65'); // false
-esHoraValida('28:05'); // false
-esHoraValida('00:00'); // true
 ```
 
 ### `puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)`
